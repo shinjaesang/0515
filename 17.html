@@ -7,10 +7,17 @@
     <title>Document</title>
     <script>
         function changeElement(){
-            var h1El = document.querySelectorAll("h1");
-            first.style.color="white";
-            first.style.backgroundColor = "blue";
-            first.innerHTML = "폴리텍 정수 인소 1학년";
+            var h1Arr = document.querySelectorAll("h1");
+            var bgArr = ["blue","red","purple"];
+            var textArr = ["폴리텍 정수 인소 1학년",h1Arr[1].innerHTML, h1Arr[2].innerHTML];
+            for(var i=0;i<h1Arr.length;i++){
+                var el = h1Arr[i];
+                el.style.color="white";
+                el.style.backgroundColor = bgArr[i];
+                el.innerHTML = textArr[i];
+
+            }
+            
         }
     </script>
 </head>
