@@ -8,32 +8,46 @@
     <script>
         var year = Number(prompt('태어난 년도를 입력하세요'));
         var n = year % 12
-        
-        if (n == 0) {
-            alert('원숭이')  
-        }else if (n == 1) {
-            alert('닭')  
-        }else if (n == 2) {
-            alert('개') 
-        }else if (n == 3) {
-            alert('돼지')  
-        }else if (n == 4) {
-            alert('쥐')  
-        }else if (n == 5) {
-            alert('소')  
-        }else if (n == 6) {
-            alert('호랑이')  
-        }else if (n == 7) {
-            alert('토끼')  
-        }else if (n == 8) {
-            alert('용')  
-        }else if (n == 9) {
-            alert('뱀')  
-        }else if (n == 10) {
-            alert('말')  
-        }else if (n == 11) {
-            alert('양')  
+        var result ="";
+        switch(n){
+            case 0:
+                result = "원숭이";
+                break;
+            case 1:
+                result = "닭";
+                break;
+            case 2:
+                result = "개";
+                break;
+            case 3:
+                result = "돼지";
+                break;
+            case 4:
+                result = "쥐";
+                break;
+            case 5:
+                result = "소";
+                break;
+            case 6:
+                result = "범";
+                break;
+            case 7:
+                result = "토끼";
+                break;
+            case 8:
+                result = "용";
+                break;
+            case 9:
+                result = "뱀";
+                break;
+            case 10:
+                result = "말";
+                break;
+            case 11:
+                result = "양";
+                break;    
         }
+        alert(year + "년도생은" + result + "띠입니다")
     </script>
 </head>
 <body>
