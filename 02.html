@@ -8,10 +8,15 @@
     <script>
         var arr = ["apple", "pear", "banana", "kiwi", "berry"]
         var i = 0;
-        while(i<arr.length){
+        while(true){
+            if(i==arr.length)
+                break;
             alert("arr["+ i+"]="+arr[i]);
             i++;
+        
+            
         }
+        
     </script>
 </head>
 <body>
